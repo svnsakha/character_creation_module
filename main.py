@@ -4,25 +4,25 @@ from random import randint
 def attack(char_name, char_class):
     if char_class == 'warrior':
         return (f'{char_name}'
-                'нанёс урон противнику равный {5 + randint(3, 5)}')
+                f'нанёс урон противнику равный {5 + randint(3, 5)}')
     if char_class == 'mage':
         return (f'{char_name}'
-                'нанёс урон противнику равный {5 + randint(5, 10)}')
+                f'нанёс урон противнику равный {5 + randint(5, 10)}')
     if char_class == 'healer':
         return (f'{char_name}'
-                'нанёс урон противнику равный {5 + randint(-3, -1)}')
+                f'нанёс урон противнику равный {5 + randint(-3, -1)}')
 
 
 def defence(char_name, char_class):
     if char_class == 'warrior':
         return (f'{char_name}'
-                'блокировал {10 + randint(5, 10)} урона')
+                f'блокировал {10 + randint(5, 10)} урона')
     if char_class == 'mage':
         return (f'{char_name}'
-                'блокировал {10 + randint(-2, 2)} урона')
+                f'блокировал {10 + randint(-2, 2)} урона')
     if char_class == 'healer':
         return (f'{char_name}'
-                'блокировал {10 + randint(2, 5)} урона')
+                f'блокировал {10 + randint(2, 5)} урона')
 
 
 def special(char_name, char_class):
@@ -73,7 +73,7 @@ def choice_char_class():
                            'Лекарь — healer: ')
         if char_class == 'warrior':
             print('Воитель — дерзкий воин ближнего боя.'
-                   'Сильный, выносливый и отважный.')
+                  'Сильный, выносливый и отважный.')
         if char_class == 'mage':
             print('Маг — находчивый воин дальнего боя.'
                   'Обладает высоким интеллектом.')
